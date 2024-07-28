@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Body -->
+  <rect x="20" y="20" width="60" height="60" rx="10" fill="#D1E751" stroke="black" stroke-width="2"/>
+  
+  <!-- Eyes -->
+  <circle cx="40" cy="45" r="5" fill="black"/>
+  <circle cx="60" cy="45" r="5" fill="black"/>
+  
+  <!-- Mouth -->
+  <rect x="35" y="60" width="30" height="15" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  
+  <!-- Short Hands -->
+  <rect x="10" y="35" width="15" height="30" rx="5" fill="#D1E751" stroke="black" stroke-width="2"/>
+  <rect x="75" y="35" width="15" height="30" rx="5" fill="#D1E751" stroke="black" stroke-width="2"/>
+  
+  <!-- Short Legs -->
+  <rect x="30" y="80" width="15" height="15" rx="5" fill="#D1E751" stroke="black" stroke-width="2"/>
+  <rect x="55" y="80" width="15" height="15" rx="5" fill="#D1E751" stroke="black" stroke-width="2"/>
+</svg>

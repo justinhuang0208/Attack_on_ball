@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 左手（現在在身體後面） -->
+  <rect x="15" y="35" width="15" height="30" rx="5" fill="#D1E751" stroke="black" stroke-width="2"/>
+  
+  <!-- 身體 -->
+  <rect x="20" y="20" width="60" height="60" rx="10" fill="#D1E751" stroke="black" stroke-width="2"/>
+  
+  <!-- 眼睛（稍微向左移動） -->
+  <circle cx="35" cy="45" r="5" fill="black"/>
+  <circle cx="55" cy="45" r="5" fill="black"/>
+  
+  <!-- 嘴巴（稍微向左移動） -->
+  <rect x="30" y="60" width="30" height="15" rx="5" fill="white" stroke="black" stroke-width="2"/>
+  
+  <!-- 右手 -->
+  <rect x="75" y="35" width="15" height="30" rx="5" fill="#D1E751" stroke="black" stroke-width="2"/>
+  
+  <!-- 短腿 -->
+  <rect x="30" y="80" width="15" height="15" rx="5" fill="#D1E751" stroke="black" stroke-width="2"/>
+  <rect x="55" y="80" width="15" height="15" rx="5" fill="#D1E751" stroke="black" stroke-width="2"/>
+</svg>
