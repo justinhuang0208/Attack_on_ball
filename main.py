@@ -24,8 +24,8 @@ balls = []
 ball_color = [(192, 43, 43), (240, 171, 15), (8, 154, 204), (114, 194, 37), (180, 87, 202)]
 init_ball_y_height = 250
 ball_vertical_speed = 3
-ball_horizontal_speed = 3
-gravity = 5
+# ball_horizonal_speed = 3
+gravity = 2
 
 
 class Character:
@@ -56,7 +56,8 @@ class Ball:
         self.y += self.vertical_speed
         #detect ball collision with ground
         if self.y + self.radius >= height:
-            self.vertical_speed = -self.vertical_speed
+            self.y = height - self.radius  # Adjust y position to be exactly on the ground
+            self.vertical_speed = -self.vertical_speed  # Reverse vertical speed
 
 running = True
 character = Character(character_x, character_y, character_radius, character_color)
@@ -78,8 +79,8 @@ while running:
     if keys[pygame.K_RIGHT] and character.x < width - character_radius:
         character.x += character_speed
 
-    # Control the probability of generating balls at 4%
-    if random.randint(0, 100) < 4:
+    # Create new balls randomly with certian probability
+    if random.randint(0, 100) < 2:
         ball_x = random.choice([0, 600])
         ball_y = random.choice([0, 20, 40])
         color_index = random.randint(0, 4)
@@ -87,7 +88,8 @@ while running:
             toward = 1
         else:
             toward = -1
-        ball = Ball(ball_x, ball_y, ball_radius, ball_color[color_index], ball_vertical_speed, ball_horizontal_speed, toward)
+        ball_horizonal_speed = random.randint(1, 3)
+        ball = Ball(ball_x, ball_y, ball_radius, ball_color[color_index], ball_vertical_speed, ball_horizonal_speed, toward)
         balls.append(ball)
 
     for ball in balls:
